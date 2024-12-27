@@ -1,0 +1,41 @@
+body {
+  background-color: #fafafa;
+}
+
+.container {
+  padding-inline: 81px;
+}
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #ffff;
+  margin-bottom: 48px;
+}
+
+.countriesInfo {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 74px;
+}
+
+.countryInfo {
+  background-color: #ffff;
+  border-radius: 5px;
+}
+
+.countryInfoUnder {
+  padding: 24px;
+}
+
+@media (width < 768px) {
+  .countriesInfo {
+    display: grid;
+    grid-template-columns: auto;
+    gap: 74px;
+  }
+
+  .container {
+    padding-inline: 16px;
+  }
+}
